@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Database</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        table {
+            border: 2px solid black;
+             width: 100%;
+            margin: 20px auto;
+            border-radius: 10px;
+            border-spacing: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+            border-spacing: 5px;
+            border-radius: 10px;
+
+
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tbody tr:hover {
+            background-color: #f1f1f1;
+            transform: scale(1.01);
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        td a {
+            color: #4CAF50;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        td a:hover {
+            text-decoration: underline;
+            color: darkgreen;
+        }
+        td img {
+            transition: transform 0.3s;
+        }
+        td img:hover {
+            transform: rotate(10deg) scale(1.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #ddd;
+            margin-top: 20px;
+            animation: fadeInUp 2s ease-in-out;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Student Database</h1>
+        <p>A comprehensive table of student details and their institutions</p>
+    </header>
+    <table>
+        <thead>
+            <tr>
+                <th>Index Number</th>
+                <th>First Name</th>
+                <th>Surname</th>
+                <th>Hall</th>
+                <th>Program of Study</th>
+                <th>Institution</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr bgcolor="Aquamarine">
+                <td>21/0002</td>
+                <td>Jessica</td>
+                <td>Amankrah</td>
+                <td>Ogua Hall</td>
+                <td><a href="https://www.ucc.edu.gh/departments/department-health-information-management"target="_blank">Health Information Management</td>
+                <td><a href="https://www.ucc.edu.gh/"><img src="IMG-20241219-WA0006.jpg" width="40" height="40"> University of Cape Coast</a></td>
+            </tr>
+            <tr bgcolor="PaleGreen">
+                <td>21/0053</td>
+                <td>Mabel</td>
+                <td>Andorful</td>
+                <td>Conti</td>
+                <td><a href="https://www.knust.edu.gh/announcements/undergraduate-admissions/admission-candidates-bachelor-science-top-programmes-nursing-midwifery-emergency-nursing-and-public-health-nursing-20222023-academic-year"target="_blank">Nursing</td>
+                <td><a href="https://www.knust.edu.gh/" target="_blank"><img src="IMG-20241219-WA0004.jpg" width="40" height="40"> Kwame Nkrumah University of Science and Technology</a></td>
+            </tr>
+            <tr bgcolor="LightBlue">
+                <td>21/0050</td>
+                <td>Patricia</td>
+                <td>Dzato</td>
+                <td>Pent Hall</td>
+                <td><a href="https://dcs.ug.edu.gh/"target="_blank">Computer Science</td>
+                <td><a href="https://www.ug.edu.gh/" target="_blank"><img src="IMG-20241219-WA0007.jpg" width="40" height="40"> University of Ghana</a></td>
+            </tr>
+            <tr bgcolor="Cyan">
+                <td>21/0033</td>
+                <td>Abraham</td>
+                <td>Asante</td>
+                <td>Nelson Mandela</td>
+                <td><a href="https://upsa.edu.gh/academics/schools-and-faculties/upsa-law-school/"target="_blank">Law</td>
+                <td><a href="https://www.upsamail.edu.gh/" target="_blank"><img src="IMG-20241219-WA0008.jpg" width="40" height="40"> University of Professional Studies, Accra</a></td>
+            </tr>
+            <tr bgcolor="DarkCyan">
+                <td>21/0007</td>
+                <td>Stella</td>
+                <td>Gyimah</td>
+                <td>Nkrumah Hall</td>
+                <td><a href="https://gimpa.edu.gh/business-school/"target="_blank">Business Administration</td>
+                <td><a href="https://www.gimpa.edu.gh/" target="_blank"><img src="IMG-20241219-WA0005.jpg" width="40" height="40"> GIMPA</a></td>
+            </tr>
+            <tr bgcolor="DarkSlateBlue">
+                <td>21/0038</td>
+                <td>Vannesa</td>
+                <td>Ampofo</td>
+                <td>Adehye Hall</td>
+                <td><a href="https://ucc.edu.gh/programmes/bachelor-science-biochemistry"target="_blank">Biochemistry</td>
+                <td><a href="https://www.ucc.edu.gh/" target="_blank"><img src="IMG-20241219-WA0006.jpg" width="40" height="40"> University of Cape Coast</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <footer>
+        <p>Designed by Group 2 | © 2024</p>
+    </footer>
+</body>
+</html>
